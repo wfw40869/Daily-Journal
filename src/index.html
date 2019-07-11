@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Daily NSS Journal</title>
+    <link rel="stylesheet" href="styles/journal.css">
+</head>
+
+<body>
+    <h1>Daily Journal</h1>
+    <!-- JOURNAL ENTRY FORM -->
+    <form action="#">
+        <!-- DATE INPUT -->
+        <fieldset class="journalEntry__fieldset">
+            <label for="journalDate">Date of entry</label>
+            <input type="date" name="journalDate" id="journalDate">
+        </fieldset>
+        <!-- CONCEPTS COVERED INPUT -->
+        <fieldset class="journalEntry__fieldset">
+            <label for="conceptsCovered">Concepts Covered</label>
+            <input type="text" name="conceptsCovered" id="conceptsCovered">
+        </fieldset>
+        <!-- JOURNAL ENTRY TEXTAREA -->
+        <fieldset class="journalEntry__fieldset">
+            <label for="journalEntry">Journal Entry</label>
+            <textarea name="journalEntry" id="journalEntry" cols="30" rows="5"></textarea>
+        </fieldset>
+        <!-- MOOD INPUT -->
+        <fieldset class="journalEntry__fieldset">
+            <label for="dailyMood">Mood for the day</label>
+            <select name="dailyMood" id="dailyMood">
+                <option value="okay">Okay</option>
+                <option value="sad">Sad</option>
+                <option value="happy">Happy</option>
+            </select>
+        </fieldset>
+        <input type="submit" value="Record Journal Entry">
+    </form>
+</body>
+
+</html>
