@@ -28,3 +28,51 @@ const journalEntries = [
         mood: "happy"
     }
 ]
+
+const determineMood = (journalEntry) => {
+    // if journal entry matches a mood, return the corresponding ionicon
+    if (journalEntry.mood === "happy") {
+        return `
+        <i class="far fa-smile"></i>
+        `
+    } else if (journalEntry.mood === "okay") {
+        return `
+        <i class="far fa-meh"></i>
+        `
+    } else {
+        return `
+        <i class="far fa-frown-open"></i>
+        `
+    }
+
+}
+
+const makeJournalEntryComponent = (journalEntry) => {
+    // Create your own HTML structure for a journal entry
+    return `
+        <section class="journalEntry">
+            <h2>${journalEntry.date}</h2>
+            <h3>${journalEntry.conceptsCovered}</h3>
+            <p>${journalEntry.entryMessage}</p>
+            <div class="mood">${determineMood(journalEntry)}</div>
+        </section>
+    `
+}
+
+/*
+    Purpose: To render all journal entries to the DOM
+
+    Arguments: entries (array of objects)
+*/
+const entryLogContainer = document.querySelector("#entryLog")
+const renderJournalEntries = (entries) => {
+    entries.forEach(entry => {
+        const htmlToDisplay = makeJournalEntryComponent(entry)
+        entryLogContainer.innerHTML += htmlToDisplay
+    })
+
+}
+
+// Invoke the render function
+renderJournalEntries(journalEntries)
+

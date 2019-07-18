@@ -1,3 +1,55 @@
-.journalEntry__fieldset {
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#entryLog {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.journalEntry {
+    flex-basis: 25%;
+    margin: 15px 5px;
+    border: 1px solid black;
+    padding: 1em 2em 3em 2em;
+    width: 200px;
+}
+
+.journalEntry:hover,
+.journalEntry:active {
+    border: 1px solid goldenrod;
+    animation: jiggle 0.2s;
+    box-shadow: 5px 15px 20px rgba(72, 62, 23, 0.4);
+    background-color: lightgoldenrodyellow;
+    z-index: 11;
+}
+
+/* Styles the icons */
+.far {
+    font-size: 2em;
+}
+
+
+@keyframes jiggle {
+    0% {
+        transform: rotate(0deg) scale(1);
+        opacity: 1;
+    }
+    33% {
+        transform: rotate(1deg) scale(1);
+        opacity: 0.75;
+    }
+    66% {
+        transform: rotate(-1deg) scale(1);
+        opacity: 0.5;
+    }
+    100% {
+        transform: rotate(0deg) scale(1);
+        opacity: 1;
+    }
 }
