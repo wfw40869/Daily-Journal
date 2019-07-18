@@ -1,1 +1,1 @@
-#Daily Journal Project
+# Daily Journal Project
