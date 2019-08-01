@@ -17,17 +17,17 @@
         <!-- DATE INPUT -->
         <fieldset class="journalEntry__fieldset">
             <label for="journalDate">Date of entry</label>
-            <input type="date" name="journalDate" id="journalDate">
+            <input type="date" name="journalDate" id="journalDate" required>
         </fieldset>
         <!-- CONCEPTS COVERED INPUT -->
         <fieldset class="journalEntry__fieldset">
             <label for="conceptsCovered">Concepts Covered</label>
-            <input type="text" name="conceptsCovered" id="conceptsCovered">
+            <input type="text" name="conceptsCovered" id="conceptsCovered" required>
         </fieldset>
         <!-- JOURNAL ENTRY TEXTAREA -->
         <fieldset class="journalEntry__fieldset">
             <label for="journalEntry">Journal Entry</label>
-            <textarea name="journalEntry" id="journalEntry" cols="30" rows="5"></textarea>
+            <textarea name="journalEntry" id="journalEntry" cols="30" rows="5" required></textarea>
         </fieldset>
         <!-- MOOD INPUT -->
         <fieldset class="journalEntry__fieldset">
@@ -38,7 +38,7 @@
                 <option value="happy">Happy</option>
             </select>
         </fieldset>
-        <input type="submit" value="Record Journal Entry">
+        <input type="submit" value="Record Journal Entry" id="submit">
     </form>
 
     <article id="entryLog">
@@ -46,11 +46,11 @@
     </article>
 
 
-
-    <script src="scripts/data.js"></script>
+    <script src="scripts/moment.js"></script>
     <script src="scripts/entriesDOM.js"></script>
     <script src="scripts/entryComponent.js"></script>
     <script src="scripts/mood.js"></script>
+    <script src="scripts/data.js"></script>
     <script src="scripts/journal.js"></script>
 
 </body>

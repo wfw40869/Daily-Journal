@@ -1,28 +1,53 @@
 {
   "entries": [
     {
-      "date": "07/09/2019",
+      "id": 1,
+      "date": "July 9th 2019",
       "conceptsCovered": "Group Projects",
       "entryMessage": "Learned a lot about working in a group. Plan, Plan Plan. Have clear and concise goals. Also, have a reach goal and a minimum viable product goal.",
       "mood": "happy"
     },
     {
-      "date": "07/10/2019",
+      "id": 2,
+      "date": "July 10th 2019",
       "conceptsCovered": "Using the Debugger",
       "entryMessage": "The debugger is very useful. Creating a flag to pause code to see what something is at that point in time is awesome!",
       "mood": "happy"
     },
     {
-      "date": "07/11/2019",
+      "id": 3,
+      "date": "July 11th 2019",
       "conceptsCovered": "Manipulating the DOM",
       "entryMessage": "Learned about foreach loops, navigating through objects and looping through arrays",
       "mood": "sad"
     },
     {
-      "date": "07/12/2019",
+      "id": 4,
+      "date": "July 12th 2019",
       "conceptsCovered": "Manipulating the DOM and Objects",
       "entryMessage": "Learned about foreach loops, changing elements' classes using JS DOM manipulation, navigating through objects and looping through arrays",
       "mood": "okay"
+    },
+    {
+      "date": "July 31st 2019",
+      "conceptsCovered": "Factory Functions",
+      "entryMessage": "My brain hurt from making my Tic-Tac-Toe game work, but I learned about removeEventListener() and that if you pass in the true boolean it Removes the event handler from the capturing phase. Also, I learned about factory functions and how they return objects.",
+      "mood": "happy",
+      "id": 5
+    },
+    {
+      "date": "August 23rd 2019",
+      "conceptsCovered": "One more time",
+      "entryMessage": "test",
+      "mood": "okay",
+      "id": 6
+    },
+    {
+      "date": "August 23rd 2019",
+      "conceptsCovered": "One more time",
+      "entryMessage": "test",
+      "mood": "okay",
+      "id": 7
     }
   ]
 }

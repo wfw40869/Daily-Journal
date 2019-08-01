@@ -5,6 +5,7 @@
 */
 const entryLogContainer = document.querySelector("#entryLog")
 const renderJournalEntries = (entries) => {
+    entryLogContainer.innerHTML = ""
     entries.forEach(entry => {
         const htmlToDisplay = makeJournalEntryComponent(entry)
         entryLogContainer.innerHTML += htmlToDisplay
