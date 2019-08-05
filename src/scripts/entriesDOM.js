@@ -3,7 +3,11 @@
 
     Arguments: entries (array of objects)
 */
+
+import makeJournalEntryComponent from "./entryComponent.js"
+
 const entryLogContainer = document.querySelector("#entryLog")
+
 const renderJournalEntries = (entries) => {
     entryLogContainer.innerHTML = ""
     entries.forEach(entry => {
@@ -12,3 +16,5 @@ const renderJournalEntries = (entries) => {
     })
 
 }
+
+export default renderJournalEntries

@@ -1,3 +1,5 @@
+import determineMood from "./mood.js"
+
 const makeJournalEntryComponent = (journalEntry) => {
     // Create your own HTML structure for a journal entry
     return `
@@ -9,3 +11,5 @@ const makeJournalEntryComponent = (journalEntry) => {
         </section>
     `
 }
+
+export default makeJournalEntryComponent

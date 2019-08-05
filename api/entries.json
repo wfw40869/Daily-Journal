@@ -36,18 +36,11 @@
       "id": 5
     },
     {
-      "date": "August 23rd 2019",
-      "conceptsCovered": "One more time",
-      "entryMessage": "test",
+      "date": "August 2nd 2019",
+      "conceptsCovered": "Array Methods",
+      "entryMessage": "Array methods are super powerful, but complex to understand how they work. For instance the sort method is able to do a bubble sort with one line of code!",
       "mood": "okay",
       "id": 6
-    },
-    {
-      "date": "August 23rd 2019",
-      "conceptsCovered": "One more time",
-      "entryMessage": "test",
-      "mood": "okay",
-      "id": 7
     }
   ]
 }

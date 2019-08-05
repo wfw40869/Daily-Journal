@@ -16,3 +16,5 @@ const determineMood = (journalEntry) => {
     }
 
 }
+
+export default determineMood
