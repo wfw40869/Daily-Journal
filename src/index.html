@@ -38,6 +38,19 @@
                 <option value="happy">Happy</option>
             </select>
         </fieldset>
+        <fieldset>
+            <legend>
+                Filter Journal Entries by Mood
+            </legend>
+            <fieldset id="filterEntries">
+                <input type="radio" name="filterMood" value="happy" id="happy--filter">
+                <label for="filterHappy">Happy</label>
+                <input type="radio" name="filterMood" value="okay" id="okay--filter">
+                <label for="filterOkay">Okay</label>
+                <input type="radio" name="filterMood" value="sad" id="sad--filter">
+                <label for="filterSad">Sad</label>
+            </fieldset>
+        </fieldset>
         <input type="submit" value="Record Journal Entry" id="submit">
     </form>
 

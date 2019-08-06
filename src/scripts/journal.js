@@ -19,6 +19,7 @@ API.getJournalEntries().then(parsedEntries => renderJournalEntries(parsedEntries
 
 events.registerSubmitListener()
 events.registerDeleteListener()
+events.filterEntries()
 
 
 

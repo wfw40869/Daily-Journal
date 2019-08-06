@@ -7,13 +7,14 @@ const addEntryButton = document.querySelector("#submit"),
     entryInput = document.querySelector("#journalEntry"),
     mood = document.querySelector("#dailyMood").value
 
+
 export default {
     registerSubmitListener() {
         addEntryButton.addEventListener("click", (event) => {
             event.preventDefault()
             // Invoke the factory function, passing along the form field values
 
-            if (dateInput.value=== "" || conceptsInput.value === "" || entryInput.value=== "") {
+            if (dateInput.value === "" || conceptsInput.value === "" || entryInput.value === "") {
                 alert("Please fill out all fields")
             } else {
                 const newJournalEntry = {
@@ -27,9 +28,9 @@ export default {
                     // Adding parenthesis after getJournalEntries and renderJournalEntries methods is not necessary because we want to pass in the entire function as an argument!!!
                     .then(API.getJournalEntries)
                     .then(renderJournalEntries)
-                dateInput.value= ""
+                dateInput.value = ""
                 entryInput.value = ""
-                conceptsInput.value= ""
+                conceptsInput.value = ""
             }
         })
     },
@@ -44,6 +45,17 @@ export default {
             }
         })
 
+    },
+    filterEntries() {
+        document.querySelector("#filterEntries").addEventListener("click", (event) => {
+            const mood = event.target.value
+            if (mood !== undefined) {
+                //get the happy entries
+                API.getJournalEntries(mood)
+                //render happy entries
+                    .then(renderJournalEntries)
+            }
+        })
     }
 
 }
