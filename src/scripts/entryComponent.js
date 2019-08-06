@@ -6,9 +6,12 @@ const makeJournalEntryComponent = (journalEntry) => {
         <section class="journalEntry">
             <h2>${journalEntry.date}</h2>
             <h3>${journalEntry.conceptsCovered}</h3>
+            <div class="mood">Mood: ${determineMood(journalEntry)}</div>
             <p>${journalEntry.entryMessage}</p>
-            <div class="mood">${determineMood(journalEntry)}</div>
-            <button id="deleteEntry--${journalEntry.id}">Delete Entry</button>
+            <aside class="buttons__aside">
+                <button class="delete__button" id="deleteEntry--${journalEntry.id}">Delete</button>
+                <button class="edit__button" id="editEntry--${journalEntry.id}">Edit</button>
+            </aside>
         </section>
     `
 }
