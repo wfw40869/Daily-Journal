@@ -8,6 +8,7 @@ const makeJournalEntryComponent = (journalEntry) => {
             <h3>${journalEntry.conceptsCovered}</h3>
             <p>${journalEntry.entryMessage}</p>
             <div class="mood">${determineMood(journalEntry)}</div>
+            <button id="deleteEntry--${journalEntry.id}">Delete Entry</button>
         </section>
     `
 }

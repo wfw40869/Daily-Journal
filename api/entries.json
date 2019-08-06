@@ -41,6 +41,13 @@
       "entryMessage": "Array methods are super powerful, but complex to understand how they work. For instance the sort method is able to do a bubble sort with one line of code!",
       "mood": "okay",
       "id": 6
+    },
+    {
+      "date": "August 5th 2019",
+      "conceptsCovered": "More Array Methods and Map Objects",
+      "entryMessage": "Chaining array methods is awesome. It can be confusing, but it is so powerful. Also, I learned about the Map object which is a powerful tool that can be used for hash map searches.",
+      "mood": "happy",
+      "id": 7
     }
   ]
 }
