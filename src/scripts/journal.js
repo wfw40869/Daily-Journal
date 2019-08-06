@@ -22,17 +22,23 @@ const addEntryButton = document.querySelector("#submit"),
 addEntryButton.addEventListener("click", (event) => {
     event.preventDefault()
     // Invoke the factory function, passing along the form field values
-    const newJournalEntry = createJournalEntry(entryDateInput.value, conceptsCoveredInput.value, journalEntryInput.value, moodInput.value)
-    
-    // saves jounral entry to database
-    API.saveJournalEntry(newJournalEntry).then(() => {
-        API.getJournalEntries()
-            .then(parsedEntries => renderJournalEntries(parsedEntries))
+
+    if (entryDateInput.value === "" || conceptsCoveredInput === "" || journalEntryInput === "") {
+        alert("Please fill out all fields")
+    } else {
+
+        const newJournalEntry = createJournalEntry(entryDateInput.value, conceptsCoveredInput.value, journalEntryInput.value, moodInput.value)
+
+        // saves jounral entry to database
+        API.saveJournalEntry(newJournalEntry).then(() => {
+            API.getJournalEntries()
+                .then(parsedEntries => renderJournalEntries(parsedEntries))
+        }
+        )
+        entryDateInput.value = ""
+        journalEntryInput.value = ""
+        conceptsCoveredInput.value = ""
     }
-    )
-    entryDateInput.value = ""
-    journalEntryInput.value = ""
-    conceptsCoveredInput.value = ""
 })
 
 
