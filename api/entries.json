@@ -48,6 +48,13 @@
       "entryMessage": "Chaining array methods is awesome. It can be confusing, but it is so powerful. Also, I learned about the Map object which is a powerful tool that can be used for hash map searches.",
       "mood": "happy",
       "id": 7
+    },
+    {
+      "date": "August 6th 2019",
+      "conceptsCovered": "More on API's and Session Storage",
+      "entryMessage": "Worked with our API to delete journal entries, filter data by mood and re-rendering that information to the DOM. Also, session/local storage are great ways to prevent unnecessary fetching of data, but I was not able to get it to completely work.",
+      "mood": "okay",
+      "id": 8
     }
   ]
 }
