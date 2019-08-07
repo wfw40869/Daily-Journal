@@ -3,7 +3,7 @@
 const API = {
     getJournalEntries() {
         // returns the data as a json file
-        return fetch(`http://localhost:8088/entries`)
+        return fetch("http://localhost:8088/entries")
             .then(entries => entries.json())
     },
     saveJournalEntry(newJournalEntry) {
