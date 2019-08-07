@@ -8,30 +8,24 @@ import API from "./data.js"
 import renderJournalEntries from "./entriesDOM.js"
 import events from "./events.js"
 
-// let entriesArray = []
-
-// API.getJournalEntries().then(parsedEntries => parsedEntries.map(entry => entriesArray.push(entry)))
-
+let localEntries = []
 
 // calls the API object method then parses through the returned entries and renders them to the page
+API.getJournalEntries().then(parsedEntries => {
+    renderJournalEntries(parsedEntries)
+    parsedEntries.forEach(entry => {
+        localEntries.push(entry)
+    })
+})
 
-// API.getJournalEntries().then(parsedEntries => {
 
-//     sessionStorage.setItem("journalEntries", JSON.stringify(parsedEntries))
-// })
-
-// let entriesArray = JSON.parse(sessionStorage.getItem("journalEntries"))
-
-// console.log('data: ', entriesArray)
-
-// renderJournalEntries(entriesArray)
-
-API.getJournalEntries().then(parsedEntries => renderJournalEntries(parsedEntries))
 
 
 events.registerSubmitListener()
 events.registerDeleteListener()
 events.filterEntries()
+
+export default localEntries
 
 
 

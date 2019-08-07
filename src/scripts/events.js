@@ -1,5 +1,6 @@
 import API from "./data.js"
 import renderJournalEntries from "./entriesDOM.js"
+import localEntries from "./journal.js"
 
 const addEntryButton = document.querySelector("#submit"),
     dateInput = document.querySelector("#journalDate"),
@@ -7,7 +8,7 @@ const addEntryButton = document.querySelector("#submit"),
     entryInput = document.querySelector("#journalEntry"),
     mood = document.querySelector("#dailyMood").value
 
-
+    
 export default {
     registerSubmitListener() {
         addEntryButton.addEventListener("click", (event) => {
@@ -38,6 +39,10 @@ export default {
         document.querySelector("#entryLog").addEventListener("click", (event) => {
             if (event.target.id.startsWith("deleteEntry")) {
                 const entryId = event.target.id.split("--")[1]
+                // find the index of the entry we want to delete in the localEntries array
+                const indexToDelete = localEntries.find(entry => entry.id === entryId)
+                // delete only that entry at that index
+                localEntries.splice(indexToDelete, 1)
                 API.deleteJournalEntry(entryId)
                     // Adding parenthesis after getJournalEntries and renderJournalEntries methods is not necessary because we want to pass in the entire function as an argument!!!
                     .then(API.getJournalEntries)
@@ -50,10 +55,10 @@ export default {
         document.querySelector("#filterEntries").addEventListener("click", (event) => {
             const mood = event.target.value
             if (mood !== undefined) {
-                //get the happy entries
-                API.getJournalEntries(mood)
-                //render happy entries
-                    .then(renderJournalEntries)
+                // filter the local entries array by mood and store it 
+                let filteredEntries = localEntries.filter(entry => entry.mood === mood)                
+                // render the filtered array
+                renderJournalEntries(filteredEntries)
             }
         })
     }
