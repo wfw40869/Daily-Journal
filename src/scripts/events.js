@@ -8,7 +8,7 @@ const addEntryButton = document.querySelector("#submit"),
     entryInput = document.querySelector("#journalEntry"),
     mood = document.querySelector("#dailyMood").value
 
-    
+
 export default {
     registerSubmitListener() {
         addEntryButton.addEventListener("click", (event) => {
@@ -19,7 +19,7 @@ export default {
                 alert("Please fill out all fields")
             } else {
                 const newJournalEntry = {
-                    date: moment(dateInput.value).format('MMMM Do YYYY'),
+                    date: moment(dateInput.value).format("MMMM Do YYYY"),
                     conceptsCovered: conceptsInput.value,
                     entryMessage: entryInput.value,
                     mood: mood
@@ -55,8 +55,8 @@ export default {
         document.querySelector("#filterEntries").addEventListener("click", (event) => {
             const mood = event.target.value
             if (mood !== undefined) {
-                // filter the local entries array by mood and store it 
-                let filteredEntries = localEntries.filter(entry => entry.mood === mood)                
+                // filter the local entries array by mood and store it
+                let filteredEntries = localEntries.filter(entry => entry.mood === mood)
                 // render the filtered array
                 renderJournalEntries(filteredEntries)
             }
