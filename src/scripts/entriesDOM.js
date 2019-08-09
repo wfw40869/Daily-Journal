@@ -4,14 +4,14 @@
     Arguments: entries (array of objects)
 */
 
-import makeJournalEntryComponent from "./entryComponent.js"
+import htmlComponents from "./entryComponent.js"
 
 const entryLogContainer = document.querySelector("#entryLog")
 
 const renderJournalEntries = (entries) => {
     entryLogContainer.innerHTML = ""
     entries.forEach(entry => {
-        const htmlToDisplay = makeJournalEntryComponent(entry)
+        const htmlToDisplay = htmlComponents.makeJournalEntryComponent(entry)
         entryLogContainer.innerHTML += htmlToDisplay
     })
 

@@ -2,59 +2,59 @@
   "entries": [
     {
       "id": 1,
-      "date": "July 9th 2019",
+      "date": "2019-07-09",
       "conceptsCovered": "Group Projects",
       "entryMessage": "Learned a lot about working in a group. Plan, Plan Plan. Have clear and concise goals. Also, have a reach goal and a minimum viable product goal.",
       "mood": "happy"
     },
     {
       "id": 2,
-      "date": "July 10th 2019",
+      "date": "2019-07-10",
       "conceptsCovered": "Using the Debugger",
       "entryMessage": "The debugger is very useful. Creating a flag to pause code to see what something is at that point in time is awesome!",
       "mood": "happy"
     },
     {
       "id": 3,
-      "date": "July 11th 2019",
+      "date": "2019-07-11",
       "conceptsCovered": "Manipulating the DOM",
-      "entryMessage": "Learned about foreach loops, navigating through objects and looping through arrays",
+      "entryMessage": "Learned about foreach loops, navigating through objects and looping through arrays.",
       "mood": "sad"
     },
     {
       "id": 4,
-      "date": "July 12th 2019",
+      "date": "2019-07-12",
       "conceptsCovered": "Manipulating the DOM and Objects",
       "entryMessage": "Learned about foreach loops, changing elements' classes using JS DOM manipulation, navigating through objects and looping through arrays",
       "mood": "okay"
     },
     {
-      "date": "July 31st 2019",
+      "id": 5,
+      "date": "2019-07-31",
       "conceptsCovered": "Factory Functions",
       "entryMessage": "My brain hurt from making my Tic-Tac-Toe game work, but I learned about removeEventListener() and that if you pass in the true boolean it Removes the event handler from the capturing phase. Also, I learned about factory functions and how they return objects.",
-      "mood": "happy",
-      "id": 5
+      "mood": "happy"
     },
     {
-      "date": "August 2nd 2019",
+      "id": 6,
+      "date": "2019-08-02",
       "conceptsCovered": "Array Methods",
       "entryMessage": "Array methods are super powerful, but complex to understand how they work. For instance the sort method is able to do a bubble sort with one line of code!",
-      "mood": "okay",
-      "id": 6
+      "mood": "okay"
     },
     {
-      "date": "August 5th 2019",
+      "id": 7,
+      "date": "2019-08-05",
       "conceptsCovered": "More Array Methods and Map Objects",
       "entryMessage": "Chaining array methods is awesome. It can be confusing, but it is so powerful. Also, I learned about the Map object which is a powerful tool that can be used for hash map searches.",
-      "mood": "happy",
-      "id": 7
+      "mood": "happy"
     },
     {
-      "date": "August 6th 2019",
+      "id": 8,
+      "date": "2019-08-06",
       "conceptsCovered": "More on API's and Session Storage",
       "entryMessage": "Worked with our API to delete journal entries, filter data by mood and re-rendering that information to the DOM. Also, session/local storage are great ways to prevent unnecessary fetching of data, but I was not able to get it to completely work.",
-      "mood": "okay",
-      "id": 8
+      "mood": "okay"
     }
   ]
 }

@@ -1,98 +1,168 @@
+/* 
+Color Palette:
+Brown: #554330
+Salmon: #F2CCBD
+Taupe: #C9C3B0
+Green: #5F6E3F
+*/
+
 html,
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+}
+/* Removes default blue border on a clicked button */
+.btn:focus {
+  outline: 0;
 }
 
-button,
+.btn {
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid #5f6e3f;
+  border-radius: 5px;
+  padding: 12px;
+  color: #5f6e3f;
+  font-size: inherit;
+  font-weight: 300;
+  -webkit-transition: background-color 0.2s color 0.2s;
+  transition: background-color 0.2s color 0.2s;
+}
+
 input[type="submit"] {
-    cursor: pointer;
-    background-color: white;
-    border: 3px solid rgb(2, 19, 112);
-    border-radius: 5px;
-    padding: 12px;
-    color: rgb(2, 19, 112);
-    font-size: inherit;
-    font-weight: 700;
+  background-color: #5f6e3f;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 12px;
+  font-size: inherit;
+  font-weight: 300;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
 }
 
-input, textarea {
-    font-size: inherit;
+input[type="submit"]:hover,
+input[type="submit"]:active {
+    background-color: #4c5833
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #5f6e3f;
+  color: white;
+}
+
+input,
+textarea {
+  font-size: inherit;
+}
+
+h1 {
+  color: white;;
+  font-size: 250%;
+  text-transform: uppercase;
+}
+
+.journalEntries__h2--pink {
+  font-size: 190%;
+  padding: 50px 0;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.journalEntries__h2--pink:after {
+  display: block;
+  height: 2px;
+  background-color: #232323;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
 }
 
 .journalEntry__form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  background-image: linear-gradient(rgba(63, 60, 60, 0.7), rgba(63, 60, 60, 0.7)), url("../img/coffee-hero.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .journalEntry__fieldset {
-    border: none;
-    display: flex;
-    text-align: center;
+  border: none;
+  display: flex;
+  text-align: center;
 }
 
-
 .buttons__aside {
-    margin-top: 15px;
-    display: flex;
-    justify-content: space-evenly;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 #entryLog {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 #dailyMood {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .journalEntry {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 25%;
-    justify-content: space-between;
-    margin: 15px 5px;
-    border: 1px solid black;
-    padding: 1em 2em 3em 2em;
-    width: 200px;
+  background-color: #ffffff;
+  box-shadow: 10px 10px 15px #4d3e2f;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 25%;
+  justify-content: space-between;
+  margin: 15px 5px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  padding: 1em 2em 3em 2em;
+  width: 200px;
 }
 
 .journalEntry:hover,
 .journalEntry:active {
-    border: 1px solid goldenrod;
-    animation: jiggle 0.2s;
-    box-shadow: 5px 15px 20px rgba(72, 62, 23, 0.4);
-    background-color: lightgoldenrodyellow;
-    z-index: 11;
+  border: 1px solid #f2ccbd;
+  animation: jiggle 0.2s;
+  box-shadow: 5px 15px 20px rgba(72, 62, 23, 0.4);
+  background-color: #c9c3b0;
+  z-index: 11;
 }
 
 /* Styles the icons */
 .far {
-    font-size: 2em;
+  font-size: 2em;
 }
 
-
 @keyframes jiggle {
-    0% {
-        transform: rotate(0deg) scale(1);
-        opacity: 1;
-    }
-    33% {
-        transform: rotate(1deg) scale(1);
-        opacity: 0.75;
-    }
-    66% {
-        transform: rotate(-1deg) scale(1);
-        opacity: 0.5;
-    }
-    100% {
-        transform: rotate(0deg) scale(1);
-        opacity: 1;
-    }
+  0% {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+  }
+  33% {
+    transform: rotate(1deg) scale(1);
+    opacity: 0.75;
+  }
+  66% {
+    transform: rotate(-1deg) scale(1);
+    opacity: 0.5;
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+  }
 }
