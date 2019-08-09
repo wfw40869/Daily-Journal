@@ -23,6 +23,7 @@ API.getJournalEntries().then(parsedEntries => {
 
 events.registerSubmitListener()
 events.registerDeleteListener()
+events.registerEditListener()
 events.filterEntries()
 
 export default localEntries
