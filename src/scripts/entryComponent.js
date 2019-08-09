@@ -9,8 +9,8 @@ const makeJournalEntryComponent = (journalEntry) => {
             <div class="mood">Mood: ${determineMood(journalEntry)}</div>
             <p>${journalEntry.entryMessage}</p>
             <aside class="buttons__aside">
-                <button class="delete__button" id="deleteEntry--${journalEntry.id}">Delete</button>
-                <button class="edit__button" id="editEntry--${journalEntry.id}">Edit</button>
+                <button class="btn delete__button" id="deleteEntry--${journalEntry.id}">Delete</button>
+                <button class="btn edit__button" id="editEntry--${journalEntry.id}">Edit</button>
             </aside>
         </section>
     `

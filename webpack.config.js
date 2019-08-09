@@ -31,7 +31,8 @@ module.exports = {
             template: "./src/index.html",
             filename: "./index.html"
         }),
-        new CopyPlugin([{ from: "./src/styles", to: "./styles" }])
+        new CopyPlugin([{ from: "./src/styles", to: "./styles" }]),
+        new CopyPlugin([{ from: "./src/img", to: "./img" }])
     ],
     output: {
         filename: "bundle.js"
