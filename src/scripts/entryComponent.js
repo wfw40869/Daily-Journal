@@ -31,7 +31,7 @@ const htmlComponents = {
                     <label for="editMood">Happy, Okay or Sad</label>
                     <input type="text" name="editMood" id="editMood" value="${journalEntry.mood}">
                 </fieldset>
-                <input type="submit" value="Save" id="saveEntryEdit--${journalEntry.id}">
+                <input type="submit" value="save" id="saveEntryEdit--${journalEntry.id}">
             </form> 
         `
     },

@@ -11,7 +11,7 @@
       "id": 2,
       "date": "2019-07-10",
       "conceptsCovered": "Using the Debugger",
-      "entryMessage": "The debugger is very useful. Creating a flag to pause code to see what something is at that point in time is awesome!",
+      "entryMessage": "The debugger is very useful. Creating a flag to pause code to see what something is at that point in time is awesome!!!",
       "mood": "happy"
     },
     {
@@ -55,6 +55,13 @@
       "conceptsCovered": "More on API's and Session Storage",
       "entryMessage": "Worked with our API to delete journal entries, filter data by mood and re-rendering that information to the DOM. Also, session/local storage are great ways to prevent unnecessary fetching of data, but I was not able to get it to completely work.",
       "mood": "okay"
+    },
+    {
+      "date": "2019-08-09",
+      "conceptsCovered": "Edit Functionality",
+      "entryMessage": "Completed Edit functionality on my journal, but I learned very quickly that when you have more than one source of data that you are managing it becomes very difficult to keep track of at different points in your application",
+      "mood": "okay",
+      "id": 9
     }
   ]
 }
